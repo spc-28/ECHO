@@ -25,7 +25,7 @@ export default function SignIn({setPage}:{setPage:React.Dispatch<SetStateAction<
         }
     }
     return (
-        <div className=" flex flex-col w-[42%] max-sm:w-[95%] max-sm:mx-4 text-white mr-6 h-[80%]">
+        <div className=" flex flex-col w-[42%] max-sm:w-[95%] min-h-fit max-sm:mx-4 text-white mr-6 h-[80%]">
                 <p className=" text-[3.5rem] pt-6 tracking-normal max-sm:leading-[66px]">Continue to chat</p>
                 <p className="py-4 pl-4 max-sm:pl-2">Don't have an account?<span className="cursor-pointer" onClick={()=>setPage(false)}>&nbsp;<u>Create new account</u></span></p>
                 <Input onChange={(e)=>setDetail((d)=>({...d,email:e.target.value}))} className="bg-[#0d121f] p-2 text-lg h-[3.3rem] border-2 border-slate-400 text-slate-100 mt-6" placeholder="Email"></Input>
