@@ -17,7 +17,7 @@ const server = app.listen(process.env.PORT, () => console.log(`Listening to Port
 const io = new Server(server, {
     connectionStateRecovery: {},
     cors: {
-        origin: "http://localhost:5173"
+        origin: "*"
     }
 });
 
